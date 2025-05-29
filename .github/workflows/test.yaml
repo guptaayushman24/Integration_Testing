@@ -23,7 +23,7 @@ jobs:
       uses: docker/setup-qemu-action@v2
 
     - name: Ensure Docker Compose is available
-      run: docker-compose version
+      run: docker compose up
 
     - name: Copy .env.example to .env
       run: cp ./1-integ-test/.env.example ./1-integ-test/.env
